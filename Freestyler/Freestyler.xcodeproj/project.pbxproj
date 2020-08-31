@@ -10,6 +10,13 @@
 		D7DD4D5B24FD2D6E00F1D398 /* Freestyler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DD4D5124FD2D6E00F1D398 /* Freestyler.framework */; };
 		D7DD4D6024FD2D6E00F1D398 /* FreestylerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4D5F24FD2D6E00F1D398 /* FreestylerTests.swift */; };
 		D7DD4D6224FD2D6E00F1D398 /* Freestyler.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DD4D5424FD2D6E00F1D398 /* Freestyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DD4DAA24FD37FA00F1D398 /* Freestyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DA924FD37FA00F1D398 /* Freestyler.swift */; };
+		D7DD4DB024FD380800F1D398 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DAC24FD380800F1D398 /* Fonts.swift */; };
+		D7DD4DB124FD380800F1D398 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DAD24FD380800F1D398 /* Images.swift */; };
+		D7DD4DB224FD380800F1D398 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DAE24FD380800F1D398 /* Theme.swift */; };
+		D7DD4DB324FD380800F1D398 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DAF24FD380800F1D398 /* Colors.swift */; };
+		D7DD4DB524FD390900F1D398 /* UIView+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DB424FD390900F1D398 /* UIView+Styling.swift */; };
+		D7DD4DB724FD3FD500F1D398 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DB624FD3FD500F1D398 /* LogLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		D7DD4D5A24FD2D6E00F1D398 /* FreestylerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreestylerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DD4D5F24FD2D6E00F1D398 /* FreestylerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreestylerTests.swift; sourceTree = "<group>"; };
 		D7DD4D6124FD2D6E00F1D398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DD4DA924FD37FA00F1D398 /* Freestyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Freestyler.swift; sourceTree = "<group>"; };
+		D7DD4DAC24FD380800F1D398 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D7DD4DAD24FD380800F1D398 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D7DD4DAE24FD380800F1D398 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D7DD4DAF24FD380800F1D398 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D7DD4DB424FD390900F1D398 /* UIView+Styling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Styling.swift"; sourceTree = "<group>"; };
+		D7DD4DB624FD3FD500F1D398 /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,10 @@
 		D7DD4D5324FD2D6E00F1D398 /* Freestyler */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD4DAB24FD380800F1D398 /* Theme */,
+				D7DD4DB424FD390900F1D398 /* UIView+Styling.swift */,
+				D7DD4DA924FD37FA00F1D398 /* Freestyler.swift */,
+				D7DD4DB624FD3FD500F1D398 /* LogLevel.swift */,
 				D7DD4D5424FD2D6E00F1D398 /* Freestyler.h */,
 				D7DD4D5524FD2D6E00F1D398 /* Info.plist */,
 			);
@@ -84,6 +102,17 @@
 				D7DD4D6124FD2D6E00F1D398 /* Info.plist */,
 			);
 			path = FreestylerTests;
+			sourceTree = "<group>";
+		};
+		D7DD4DAB24FD380800F1D398 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DAE24FD380800F1D398 /* Theme.swift */,
+				D7DD4DAF24FD380800F1D398 /* Colors.swift */,
+				D7DD4DAC24FD380800F1D398 /* Fonts.swift */,
+				D7DD4DAD24FD380800F1D398 /* Images.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +177,7 @@
 				TargetAttributes = {
 					D7DD4D5024FD2D6E00F1D398 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					D7DD4D5924FD2D6E00F1D398 = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DD4DB024FD380800F1D398 /* Fonts.swift in Sources */,
+				D7DD4DB524FD390900F1D398 /* UIView+Styling.swift in Sources */,
+				D7DD4DB324FD380800F1D398 /* Colors.swift in Sources */,
+				D7DD4DB224FD380800F1D398 /* Theme.swift in Sources */,
+				D7DD4DB724FD3FD500F1D398 /* LogLevel.swift in Sources */,
+				D7DD4DB124FD380800F1D398 /* Images.swift in Sources */,
+				D7DD4DAA24FD37FA00F1D398 /* Freestyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +377,7 @@
 		D7DD4D6624FD2D6E00F1D398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = digital.wup.Freestyler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +402,7 @@
 		D7DD4D6724FD2D6E00F1D398 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +426,7 @@
 		D7DD4D6924FD2D6E00F1D398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FreestylerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +444,7 @@
 		D7DD4D6A24FD2D6E00F1D398 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FreestylerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
