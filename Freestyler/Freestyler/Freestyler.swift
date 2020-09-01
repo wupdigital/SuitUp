@@ -20,7 +20,7 @@ public class Freestyler {
     public private(set) var currentTheme: Theme?
     
     // MARK: - Theme handling
-    func registerThemes(_ themes: Theme...) {
+    public func registerThemes(_ themes: Theme...) {
         availableThemes.removeAll()
         guard themes.count > 0 else {
             fatalError("Freestyler ERROR - Themes have not registered correctly, because you wanted to register an empty list!")
@@ -32,7 +32,7 @@ public class Freestyler {
         currentTheme = themes.first
     }
     
-    func changeTheme(to identifier: String) {
+    public func changeTheme(to identifier: String) {
         guard let nextTheme = availableThemes[identifier] else {
             print("Freestyler WARNING - Change theme has failed, because theme with the given identifier '\(identifier)' is not available through the registered themes!")
             return
