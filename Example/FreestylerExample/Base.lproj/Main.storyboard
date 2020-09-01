@@ -27,10 +27,19 @@
                                 <rect key="frame" x="0.0" y="743.5" width="414" height="152.5"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-Hp-mFc">
+                                <rect key="frame" x="184" y="805" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeTheme" destination="BYZ-38-t0r" eventType="touchUpInside" id="axC-Rs-ax4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="centerY" secondItem="f80-DJ-Ix7" secondAttribute="centerY" id="Bn9-lU-LYP"/>
                             <constraint firstItem="vYU-0A-ghw" firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="F83-a2-FdH"/>
+                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="centerX" secondItem="f80-DJ-Ix7" secondAttribute="centerX" id="JkU-NK-p37"/>
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="NXx-0a-noU"/>
                             <constraint firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="Pso-dJ-Baf"/>
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="leading" secondItem="vYU-0A-ghw" secondAttribute="leading" id="TQ6-eL-Nz6"/>
@@ -46,6 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="changeThemeButton" destination="0GJ-Hp-mFc" id="oBl-Ew-Aou"/>
                         <outlet property="primaryView" destination="a9f-0g-OCy" id="95n-94-Zyo"/>
                         <outlet property="secondaryView" destination="vYU-0A-ghw" id="xd1-Ba-Myi"/>
                         <outlet property="tertiaryView" destination="f80-DJ-Ix7" id="sEv-gI-hy0"/>
