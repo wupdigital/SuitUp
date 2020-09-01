@@ -23,6 +23,10 @@
 		D7DD4DD124FE169200F1D398 /* SunsetFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD024FE169200F1D398 /* SunsetFonts.swift */; };
 		D7DD4DD324FE16AD00F1D398 /* SunsetImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD224FE16AD00F1D398 /* SunsetImages.swift */; };
 		D7DD4DD524FE176B00F1D398 /* ThemeIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD424FE176B00F1D398 /* ThemeIdentifier.swift */; };
+		D7DD4DD824FE23EB00F1D398 /* SunriseTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD724FE23EB00F1D398 /* SunriseTheme.swift */; };
+		D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD924FE242E00F1D398 /* SunriseColors.swift */; };
+		D7DD4DDC24FE243A00F1D398 /* SunriseFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DDB24FE243A00F1D398 /* SunriseFonts.swift */; };
+		D7DD4DDE24FE244400F1D398 /* SunriseImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +61,10 @@
 		D7DD4DD024FE169200F1D398 /* SunsetFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunsetFonts.swift; sourceTree = "<group>"; };
 		D7DD4DD224FE16AD00F1D398 /* SunsetImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunsetImages.swift; sourceTree = "<group>"; };
 		D7DD4DD424FE176B00F1D398 /* ThemeIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeIdentifier.swift; sourceTree = "<group>"; };
+		D7DD4DD724FE23EB00F1D398 /* SunriseTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseTheme.swift; sourceTree = "<group>"; };
+		D7DD4DD924FE242E00F1D398 /* SunriseColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseColors.swift; sourceTree = "<group>"; };
+		D7DD4DDB24FE243A00F1D398 /* SunriseFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseFonts.swift; sourceTree = "<group>"; };
+		D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		D7DD4DB924FE052400F1D398 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD4DD624FE23DB00F1D398 /* Sunrise */,
 				D7DD4DC524FE0E2300F1D398 /* Sunset */,
 				D7DD4DC024FE080200F1D398 /* Palette */,
 				D7DD4DD424FE176B00F1D398 /* ThemeIdentifier.swift */,
@@ -140,6 +149,17 @@
 				D7DD4DD224FE16AD00F1D398 /* SunsetImages.swift */,
 			);
 			path = Sunset;
+			sourceTree = "<group>";
+		};
+		D7DD4DD624FE23DB00F1D398 /* Sunrise */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DD724FE23EB00F1D398 /* SunriseTheme.swift */,
+				D7DD4DD924FE242E00F1D398 /* SunriseColors.swift */,
+				D7DD4DDB24FE243A00F1D398 /* SunriseFonts.swift */,
+				D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */,
+			);
+			path = Sunrise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,17 +234,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DD4DDC24FE243A00F1D398 /* SunriseFonts.swift in Sources */,
 				D7DD4DC224FE081600F1D398 /* FontPalette.swift in Sources */,
 				D7DD4DCF24FE15E700F1D398 /* SunsetColors.swift in Sources */,
 				D7DD4DC724FE0E3400F1D398 /* SunsetTheme.swift in Sources */,
 				D7DD4D9524FD35F300F1D398 /* ViewController.swift in Sources */,
 				D7DD4DD124FE169200F1D398 /* SunsetFonts.swift in Sources */,
+				D7DD4DD824FE23EB00F1D398 /* SunriseTheme.swift in Sources */,
+				D7DD4DDE24FE244400F1D398 /* SunriseImages.swift in Sources */,
 				D7DD4D9124FD35F300F1D398 /* AppDelegate.swift in Sources */,
 				D7DD4D9324FD35F300F1D398 /* SceneDelegate.swift in Sources */,
 				D7DD4DBF24FE062700F1D398 /* ColorPalette.swift in Sources */,
 				D7DD4DC424FE08B500F1D398 /* ImagePalette.swift in Sources */,
 				D7DD4DD324FE16AD00F1D398 /* SunsetImages.swift in Sources */,
 				D7DD4DD524FE176B00F1D398 /* ThemeIdentifier.swift in Sources */,
+				D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
