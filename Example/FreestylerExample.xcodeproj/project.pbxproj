@@ -15,6 +15,9 @@
 		D7DD4D9D24FD35F500F1D398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DD4D9B24FD35F500F1D398 /* LaunchScreen.storyboard */; };
 		D7DD4DA624FD36A200F1D398 /* Freestyler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DD4DA524FD36A200F1D398 /* Freestyler.framework */; };
 		D7DD4DA724FD36A200F1D398 /* Freestyler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7DD4DA524FD36A200F1D398 /* Freestyler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7DD4DBF24FE062700F1D398 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DBE24FE062700F1D398 /* ColorPalette.swift */; };
+		D7DD4DC224FE081600F1D398 /* FontPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DC124FE081600F1D398 /* FontPalette.swift */; };
+		D7DD4DC424FE08B500F1D398 /* ImagePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DC324FE08B500F1D398 /* ImagePalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,9 @@
 		D7DD4D9C24FD35F500F1D398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DD4D9E24FD35F500F1D398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DD4DA524FD36A200F1D398 /* Freestyler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Freestyler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DD4DBE24FE062700F1D398 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		D7DD4DC124FE081600F1D398 /* FontPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPalette.swift; sourceTree = "<group>"; };
+		D7DD4DC324FE08B500F1D398 /* ImagePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		D7DD4D8F24FD35F300F1D398 /* FreestylerExample */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD4DB924FE052400F1D398 /* Theme */,
 				D7DD4D9024FD35F300F1D398 /* AppDelegate.swift */,
 				D7DD4D9224FD35F300F1D398 /* SceneDelegate.swift */,
 				D7DD4D9424FD35F300F1D398 /* ViewController.swift */,
@@ -92,6 +99,24 @@
 				D7DD4DA524FD36A200F1D398 /* Freestyler.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7DD4DB924FE052400F1D398 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DC024FE080200F1D398 /* Palette */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		D7DD4DC024FE080200F1D398 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DBE24FE062700F1D398 /* ColorPalette.swift */,
+				D7DD4DC124FE081600F1D398 /* FontPalette.swift */,
+				D7DD4DC324FE08B500F1D398 /* ImagePalette.swift */,
+			);
+			path = Palette;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DD4DC224FE081600F1D398 /* FontPalette.swift in Sources */,
 				D7DD4D9524FD35F300F1D398 /* ViewController.swift in Sources */,
 				D7DD4D9124FD35F300F1D398 /* AppDelegate.swift in Sources */,
 				D7DD4D9324FD35F300F1D398 /* SceneDelegate.swift in Sources */,
+				D7DD4DBF24FE062700F1D398 /* ColorPalette.swift in Sources */,
+				D7DD4DC424FE08B500F1D398 /* ImagePalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
