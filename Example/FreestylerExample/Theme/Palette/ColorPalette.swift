@@ -12,6 +12,8 @@ import UIKit
 protocol ColorPalette: Colors {
     var primary: UIColor { get }
     var secondary: UIColor { get }
+    var tertiary: UIColor { get }
+    
     var primaryText: UIColor { get }
     var secondaryText: UIColor { get }
 }

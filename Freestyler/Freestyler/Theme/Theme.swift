@@ -8,7 +8,7 @@
 
 public protocol Theme {
     var identifier: String { get }
-    var colors: Colors? { get }
-    var fonts: Fonts? { get }
-    var images: Images? { get }
+    var colors: Colors { get }
+    var fonts: Fonts { get }
+    var images: Images { get }
 }

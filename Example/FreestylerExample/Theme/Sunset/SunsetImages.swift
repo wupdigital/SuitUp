@@ -1,5 +1,5 @@
 //
-//  ImagePalette.swift
+//  SunsetImages.swift
 //  FreestylerExample
 //
 //  Created by Dávid Széles-Szép on 2020. 09. 01..
@@ -9,6 +9,6 @@
 import Freestyler
 import UIKit
 
-protocol ImagePalette: Images {
-    var favorite: UIImage { get }
+struct SunsetImages: ImagePalette {
+    let favorite = UIImage(named: "favorite_border")!
 }
