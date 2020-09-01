@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,50 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FreestylerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-0g-OCy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYU-0A-ghw">
+                                <rect key="frame" x="0.0" y="448" width="414" height="295.5"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f80-DJ-Ix7">
+                                <rect key="frame" x="0.0" y="743.5" width="414" height="152.5"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vYU-0A-ghw" firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="F83-a2-FdH"/>
+                            <constraint firstItem="f80-DJ-Ix7" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="NXx-0a-noU"/>
+                            <constraint firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="Pso-dJ-Baf"/>
+                            <constraint firstItem="f80-DJ-Ix7" firstAttribute="leading" secondItem="vYU-0A-ghw" secondAttribute="leading" id="TQ6-eL-Nz6"/>
+                            <constraint firstItem="vYU-0A-ghw" firstAttribute="height" secondItem="a9f-0g-OCy" secondAttribute="height" multiplier="0.66" id="VBK-Ke-DAn"/>
+                            <constraint firstItem="a9f-0g-OCy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VI7-Wt-0DH"/>
+                            <constraint firstItem="a9f-0g-OCy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zkx-7y-qLl"/>
+                            <constraint firstItem="vYU-0A-ghw" firstAttribute="leading" secondItem="a9f-0g-OCy" secondAttribute="leading" id="c4V-rw-now"/>
+                            <constraint firstItem="f80-DJ-Ix7" firstAttribute="top" secondItem="vYU-0A-ghw" secondAttribute="bottom" id="cRf-H9-FzL"/>
+                            <constraint firstItem="a9f-0g-OCy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="jhW-NF-Tkg"/>
+                            <constraint firstItem="f80-DJ-Ix7" firstAttribute="trailing" secondItem="vYU-0A-ghw" secondAttribute="trailing" id="nKf-EA-dTn"/>
+                            <constraint firstItem="vYU-0A-ghw" firstAttribute="top" secondItem="a9f-0g-OCy" secondAttribute="bottom" id="t0a-jj-kcL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="primaryView" destination="a9f-0g-OCy" id="95n-94-Zyo"/>
+                        <outlet property="secondaryView" destination="vYU-0A-ghw" id="xd1-Ba-Myi"/>
+                        <outlet property="tertiaryView" destination="f80-DJ-Ix7" id="sEv-gI-hy0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

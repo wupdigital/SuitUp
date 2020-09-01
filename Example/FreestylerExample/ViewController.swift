@@ -9,14 +9,20 @@
 import UIKit
 import Freestyler
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet private weak var primaryView: UIView!
+    @IBOutlet private weak var secondaryView: UIView!
+    @IBOutlet private weak var tertiaryView: UIView!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = (Freestyler.shared.currentTheme?.colors as? ColorPalette)?.primary
+        primaryView.apply(style: PrimaryViewStyle())
+        secondaryView.apply(style: SecondaryViewStyle())
+        tertiaryView.apply(style: TertiaryViewStyle())
     }
-
-
 }
 

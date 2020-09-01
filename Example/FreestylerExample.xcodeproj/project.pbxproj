@@ -27,6 +27,11 @@
 		D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DD924FE242E00F1D398 /* SunriseColors.swift */; };
 		D7DD4DDC24FE243A00F1D398 /* SunriseFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DDB24FE243A00F1D398 /* SunriseFonts.swift */; };
 		D7DD4DDE24FE244400F1D398 /* SunriseImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */; };
+		D7DD4DE124FE31F900F1D398 /* ViewStyleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE024FE31F900F1D398 /* ViewStyleDescriptor.swift */; };
+		D7DD4DE324FE32C900F1D398 /* PrimaryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE224FE32C900F1D398 /* PrimaryViewStyle.swift */; };
+		D7DD4DE524FE32D400F1D398 /* SecondaryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */; };
+		D7DD4DE724FE32E400F1D398 /* TertiaryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */; };
+		D7DD4DEB24FE342300F1D398 /* StyleDescriptor+Palettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DEA24FE342300F1D398 /* StyleDescriptor+Palettes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +70,11 @@
 		D7DD4DD924FE242E00F1D398 /* SunriseColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseColors.swift; sourceTree = "<group>"; };
 		D7DD4DDB24FE243A00F1D398 /* SunriseFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseFonts.swift; sourceTree = "<group>"; };
 		D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseImages.swift; sourceTree = "<group>"; };
+		D7DD4DE024FE31F900F1D398 /* ViewStyleDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyleDescriptor.swift; sourceTree = "<group>"; };
+		D7DD4DE224FE32C900F1D398 /* PrimaryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewStyle.swift; sourceTree = "<group>"; };
+		D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewStyle.swift; sourceTree = "<group>"; };
+		D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryViewStyle.swift; sourceTree = "<group>"; };
+		D7DD4DEA24FE342300F1D398 /* StyleDescriptor+Palettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleDescriptor+Palettes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		D7DD4D8F24FD35F300F1D398 /* FreestylerExample */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD4DDF24FE318C00F1D398 /* Style */,
 				D7DD4DB924FE052400F1D398 /* Theme */,
 				D7DD4D9024FD35F300F1D398 /* AppDelegate.swift */,
 				D7DD4D9224FD35F300F1D398 /* SceneDelegate.swift */,
@@ -126,6 +137,7 @@
 				D7DD4DC524FE0E2300F1D398 /* Sunset */,
 				D7DD4DC024FE080200F1D398 /* Palette */,
 				D7DD4DD424FE176B00F1D398 /* ThemeIdentifier.swift */,
+				D7DD4DEA24FE342300F1D398 /* StyleDescriptor+Palettes.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -160,6 +172,17 @@
 				D7DD4DDD24FE244400F1D398 /* SunriseImages.swift */,
 			);
 			path = Sunrise;
+			sourceTree = "<group>";
+		};
+		D7DD4DDF24FE318C00F1D398 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DE024FE31F900F1D398 /* ViewStyleDescriptor.swift */,
+				D7DD4DE224FE32C900F1D398 /* PrimaryViewStyle.swift */,
+				D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */,
+				D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +262,7 @@
 				D7DD4DCF24FE15E700F1D398 /* SunsetColors.swift in Sources */,
 				D7DD4DC724FE0E3400F1D398 /* SunsetTheme.swift in Sources */,
 				D7DD4D9524FD35F300F1D398 /* ViewController.swift in Sources */,
+				D7DD4DE324FE32C900F1D398 /* PrimaryViewStyle.swift in Sources */,
 				D7DD4DD124FE169200F1D398 /* SunsetFonts.swift in Sources */,
 				D7DD4DD824FE23EB00F1D398 /* SunriseTheme.swift in Sources */,
 				D7DD4DDE24FE244400F1D398 /* SunriseImages.swift in Sources */,
@@ -246,9 +270,13 @@
 				D7DD4D9324FD35F300F1D398 /* SceneDelegate.swift in Sources */,
 				D7DD4DBF24FE062700F1D398 /* ColorPalette.swift in Sources */,
 				D7DD4DC424FE08B500F1D398 /* ImagePalette.swift in Sources */,
+				D7DD4DE724FE32E400F1D398 /* TertiaryViewStyle.swift in Sources */,
 				D7DD4DD324FE16AD00F1D398 /* SunsetImages.swift in Sources */,
 				D7DD4DD524FE176B00F1D398 /* ThemeIdentifier.swift in Sources */,
 				D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */,
+				D7DD4DE124FE31F900F1D398 /* ViewStyleDescriptor.swift in Sources */,
+				D7DD4DEB24FE342300F1D398 /* StyleDescriptor+Palettes.swift in Sources */,
+				D7DD4DE524FE32D400F1D398 /* SecondaryViewStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
