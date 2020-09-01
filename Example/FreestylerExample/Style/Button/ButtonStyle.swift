@@ -9,7 +9,7 @@
 import UIKit
 
 final class ButtonStyle: NSObject, ButtonStyleDescriptor {
-    var backgroundColor: UIColor { UIColor.white.withAlphaComponent(0.1) }
+    var backgroundColor: UIColor { UIColor.white.withAlphaComponent(0.2) }
     var normalTitleColor: UIColor { colors.primaryText }
     var titleFont: UIFont { fonts.body }
 }

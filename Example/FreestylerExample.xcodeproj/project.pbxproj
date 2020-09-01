@@ -39,6 +39,9 @@
 		D7DD4DF524FE49C900F1D398 /* TertiaryViewStyleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DF424FE49C900F1D398 /* TertiaryViewStyleDescriptor.swift */; };
 		D7DD4DF724FE4A1600F1D398 /* FavoriteImageViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DF624FE4A1600F1D398 /* FavoriteImageViewStyle.swift */; };
 		D7DD4DF924FE4A2800F1D398 /* ImageViewStyleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DF824FE4A2800F1D398 /* ImageViewStyleDescriptor.swift */; };
+		D7DD4E0024FE541800F1D398 /* LabelStyleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DFF24FE541800F1D398 /* LabelStyleDescriptor.swift */; };
+		D7DD4E0224FE543B00F1D398 /* TitleLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4E0124FE543B00F1D398 /* TitleLabelStyle.swift */; };
+		D7DD4E0424FE544800F1D398 /* BodyLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4E0324FE544800F1D398 /* BodyLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +92,9 @@
 		D7DD4DF424FE49C900F1D398 /* TertiaryViewStyleDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryViewStyleDescriptor.swift; sourceTree = "<group>"; };
 		D7DD4DF624FE4A1600F1D398 /* FavoriteImageViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageViewStyle.swift; sourceTree = "<group>"; };
 		D7DD4DF824FE4A2800F1D398 /* ImageViewStyleDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewStyleDescriptor.swift; sourceTree = "<group>"; };
+		D7DD4DFF24FE541800F1D398 /* LabelStyleDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleDescriptor.swift; sourceTree = "<group>"; };
+		D7DD4E0124FE543B00F1D398 /* TitleLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelStyle.swift; sourceTree = "<group>"; };
+		D7DD4E0324FE544800F1D398 /* BodyLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,8 +199,9 @@
 		D7DD4DDF24FE318C00F1D398 /* Style */ = {
 			isa = PBXGroup;
 			children = (
-				D7DD4DFC24FE4E6700F1D398 /* ImageView */,
+				D7DD4DFE24FE53FE00F1D398 /* Label */,
 				D7DD4DFB24FE4E5D00F1D398 /* Button */,
+				D7DD4DFC24FE4E6700F1D398 /* ImageView */,
 				D7DD4DFA24FE4E4200F1D398 /* View */,
 			);
 			path = Style;
@@ -236,6 +243,16 @@
 				D7DD4DF424FE49C900F1D398 /* TertiaryViewStyleDescriptor.swift */,
 			);
 			path = Tertiary;
+			sourceTree = "<group>";
+		};
+		D7DD4DFE24FE53FE00F1D398 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4E0124FE543B00F1D398 /* TitleLabelStyle.swift */,
+				D7DD4E0324FE544800F1D398 /* BodyLabelStyle.swift */,
+				D7DD4DFF24FE541800F1D398 /* LabelStyleDescriptor.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +337,7 @@
 				D7DD4D9524FD35F300F1D398 /* ViewController.swift in Sources */,
 				D7DD4DE324FE32C900F1D398 /* PrimaryViewStyle.swift in Sources */,
 				D7DD4DD124FE169200F1D398 /* SunsetFonts.swift in Sources */,
+				D7DD4E0224FE543B00F1D398 /* TitleLabelStyle.swift in Sources */,
 				D7DD4DD824FE23EB00F1D398 /* SunriseTheme.swift in Sources */,
 				D7DD4DDE24FE244400F1D398 /* SunriseImages.swift in Sources */,
 				D7DD4D9124FD35F300F1D398 /* AppDelegate.swift in Sources */,
@@ -331,7 +349,9 @@
 				D7DD4DED24FE40C900F1D398 /* ButtonStyleDescriptor.swift in Sources */,
 				D7DD4DD324FE16AD00F1D398 /* SunsetImages.swift in Sources */,
 				D7DD4DD524FE176B00F1D398 /* ThemeIdentifier.swift in Sources */,
+				D7DD4E0024FE541800F1D398 /* LabelStyleDescriptor.swift in Sources */,
 				D7DD4DF524FE49C900F1D398 /* TertiaryViewStyleDescriptor.swift in Sources */,
+				D7DD4E0424FE544800F1D398 /* BodyLabelStyle.swift in Sources */,
 				D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */,
 				D7DD4DE124FE31F900F1D398 /* ViewStyleDescriptor.swift in Sources */,
 				D7DD4DEF24FE439200F1D398 /* Button+Stylable.swift in Sources */,
