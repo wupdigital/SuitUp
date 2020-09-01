@@ -45,6 +45,8 @@ final class ViewController: UIViewController {
         primaryView.apply(style: PrimaryViewStyle())
         secondaryView.apply(style: SecondaryViewStyle())
         tertiaryView.apply(style: TertiaryViewStyle())
+        
+        changeThemeButton.apply(style: ButtonStyle())
     }
     
     private func refreshChangeThemeButtonTitle() {

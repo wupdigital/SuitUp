@@ -32,6 +32,9 @@
 		D7DD4DE524FE32D400F1D398 /* SecondaryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */; };
 		D7DD4DE724FE32E400F1D398 /* TertiaryViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */; };
 		D7DD4DEB24FE342300F1D398 /* StyleDescriptor+Palettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DEA24FE342300F1D398 /* StyleDescriptor+Palettes.swift */; };
+		D7DD4DED24FE40C900F1D398 /* ButtonStyleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DEC24FE40C900F1D398 /* ButtonStyleDescriptor.swift */; };
+		D7DD4DEF24FE439200F1D398 /* Button+Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DEE24FE439200F1D398 /* Button+Stylable.swift */; };
+		D7DD4DF124FE43F500F1D398 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD4DF024FE43F500F1D398 /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +78,9 @@
 		D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewStyle.swift; sourceTree = "<group>"; };
 		D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryViewStyle.swift; sourceTree = "<group>"; };
 		D7DD4DEA24FE342300F1D398 /* StyleDescriptor+Palettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleDescriptor+Palettes.swift"; sourceTree = "<group>"; };
+		D7DD4DEC24FE40C900F1D398 /* ButtonStyleDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleDescriptor.swift; sourceTree = "<group>"; };
+		D7DD4DEE24FE439200F1D398 /* Button+Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Stylable.swift"; sourceTree = "<group>"; };
+		D7DD4DF024FE43F500F1D398 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				D7DD4D9924FD35F500F1D398 /* Assets.xcassets */,
 				D7DD4D9B24FD35F500F1D398 /* LaunchScreen.storyboard */,
 				D7DD4D9E24FD35F500F1D398 /* Info.plist */,
+				D7DD4DEE24FE439200F1D398 /* Button+Stylable.swift */,
 			);
 			path = FreestylerExample;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 				D7DD4DE224FE32C900F1D398 /* PrimaryViewStyle.swift */,
 				D7DD4DE424FE32D400F1D398 /* SecondaryViewStyle.swift */,
 				D7DD4DE624FE32E400F1D398 /* TertiaryViewStyle.swift */,
+				D7DD4DEC24FE40C900F1D398 /* ButtonStyleDescriptor.swift */,
+				D7DD4DF024FE43F500F1D398 /* ButtonStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 				D7DD4DC224FE081600F1D398 /* FontPalette.swift in Sources */,
 				D7DD4DCF24FE15E700F1D398 /* SunsetColors.swift in Sources */,
 				D7DD4DC724FE0E3400F1D398 /* SunsetTheme.swift in Sources */,
+				D7DD4DF124FE43F500F1D398 /* ButtonStyle.swift in Sources */,
 				D7DD4D9524FD35F300F1D398 /* ViewController.swift in Sources */,
 				D7DD4DE324FE32C900F1D398 /* PrimaryViewStyle.swift in Sources */,
 				D7DD4DD124FE169200F1D398 /* SunsetFonts.swift in Sources */,
@@ -271,10 +281,12 @@
 				D7DD4DBF24FE062700F1D398 /* ColorPalette.swift in Sources */,
 				D7DD4DC424FE08B500F1D398 /* ImagePalette.swift in Sources */,
 				D7DD4DE724FE32E400F1D398 /* TertiaryViewStyle.swift in Sources */,
+				D7DD4DED24FE40C900F1D398 /* ButtonStyleDescriptor.swift in Sources */,
 				D7DD4DD324FE16AD00F1D398 /* SunsetImages.swift in Sources */,
 				D7DD4DD524FE176B00F1D398 /* ThemeIdentifier.swift in Sources */,
 				D7DD4DDA24FE242E00F1D398 /* SunriseColors.swift in Sources */,
 				D7DD4DE124FE31F900F1D398 /* ViewStyleDescriptor.swift in Sources */,
+				D7DD4DEF24FE439200F1D398 /* Button+Stylable.swift in Sources */,
 				D7DD4DEB24FE342300F1D398 /* StyleDescriptor+Palettes.swift in Sources */,
 				D7DD4DE524FE32D400F1D398 /* SecondaryViewStyle.swift in Sources */,
 			);

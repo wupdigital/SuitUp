@@ -27,9 +27,12 @@
                                 <rect key="frame" x="0.0" y="743.5" width="414" height="152.5"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-Hp-mFc">
-                                <rect key="frame" x="184" y="805" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-Hp-mFc">
+                                <rect key="frame" x="32" y="574" width="350" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e7M-nj-3dd"/>
+                                </constraints>
+                                <state key="normal" title="Change theme"/>
                                 <connections>
                                     <action selector="changeTheme" destination="BYZ-38-t0r" eventType="touchUpInside" id="axC-Rs-ax4"/>
                                 </connections>
@@ -37,9 +40,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="centerY" secondItem="f80-DJ-Ix7" secondAttribute="centerY" id="Bn9-lU-LYP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0GJ-Hp-mFc" secondAttribute="trailing" constant="32" id="3n3-Ob-UcP"/>
                             <constraint firstItem="vYU-0A-ghw" firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="F83-a2-FdH"/>
-                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="centerX" secondItem="f80-DJ-Ix7" secondAttribute="centerX" id="JkU-NK-p37"/>
+                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="N39-pt-moH"/>
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="NXx-0a-noU"/>
                             <constraint firstAttribute="trailing" secondItem="a9f-0g-OCy" secondAttribute="trailing" id="Pso-dJ-Baf"/>
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="leading" secondItem="vYU-0A-ghw" secondAttribute="leading" id="TQ6-eL-Nz6"/>
@@ -50,6 +53,7 @@
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="top" secondItem="vYU-0A-ghw" secondAttribute="bottom" id="cRf-H9-FzL"/>
                             <constraint firstItem="a9f-0g-OCy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="jhW-NF-Tkg"/>
                             <constraint firstItem="f80-DJ-Ix7" firstAttribute="trailing" secondItem="vYU-0A-ghw" secondAttribute="trailing" id="nKf-EA-dTn"/>
+                            <constraint firstItem="0GJ-Hp-mFc" firstAttribute="centerY" secondItem="vYU-0A-ghw" secondAttribute="centerY" id="ojv-zj-Eh4"/>
                             <constraint firstItem="vYU-0A-ghw" firstAttribute="top" secondItem="a9f-0g-OCy" secondAttribute="bottom" id="t0a-jj-kcL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
