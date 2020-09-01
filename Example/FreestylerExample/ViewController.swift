@@ -11,6 +11,8 @@ import Freestyler
 
 final class ViewController: UIViewController {
 
+    override var prefersStatusBarHidden: Bool { true }
+    
     // MARK: - Outlets
     @IBOutlet private weak var primaryView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
@@ -45,7 +47,7 @@ final class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) {
             self.refreshStyles()
         }
-    }
+    }   
 }
 
 // MARK: - Private
