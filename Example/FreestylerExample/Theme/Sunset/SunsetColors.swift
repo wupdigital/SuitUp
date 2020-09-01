@@ -10,10 +10,10 @@ import Freestyler
 import UIKit
 
 struct SunsetColors: ColorPalette {
-    let primary = UIColor(red: 6/255, green: 43/255, blue: 121/255, alpha: 1)
-    let secondary = UIColor(red: 22/255, green: 73/255, blue: 138/255, alpha: 1)
-    let tertiary = UIColor(red: 89/255, green: 149/255, blue: 183/255, alpha: 1)
+    let primary = UIColor(red: 250/255, green: 251/255, blue: 189/255, alpha: 1)
+    let secondary = UIColor(red: 253/255, green: 224/255, blue: 80/255, alpha: 1)
+    let tertiary = UIColor(red: 241/255, green: 179/255, blue: 81/255, alpha: 1)
     
-    let primaryText = UIColor.white
-    var secondaryText = UIColor.white.withAlphaComponent(0.5)
+    let primaryText = UIColor.black
+    var secondaryText = UIColor.black.withAlphaComponent(0.5)
 }
