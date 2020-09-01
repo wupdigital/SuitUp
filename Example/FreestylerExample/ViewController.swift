@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet private weak var primaryView: UIView!
     @IBOutlet private weak var secondaryView: UIView!
-    @IBOutlet private weak var tertiaryView: UIView!
+    @IBOutlet private weak var tertiaryView: TertiaryView!
     @IBOutlet private weak var changeThemeButton: UIButton!
     
     // MARK: - Lifecycle

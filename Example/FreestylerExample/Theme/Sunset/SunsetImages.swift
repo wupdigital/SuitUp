@@ -10,5 +10,5 @@ import Freestyler
 import UIKit
 
 struct SunsetImages: ImagePalette {
-    let favorite = UIImage(named: "favorite_border")!
+    let favorite = UIImage(named: "favorite")!
 }

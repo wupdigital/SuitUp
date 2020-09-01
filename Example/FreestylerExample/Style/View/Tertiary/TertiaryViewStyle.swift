@@ -8,6 +8,7 @@
 
 import UIKit
 
-final class TertiaryViewStyle: NSObject, ViewStyleDescriptor {
+final class TertiaryViewStyle: NSObject, TertiaryViewStyleDescriptor {
     var backgroundColor: UIColor { colors.tertiary }
+    var imageViewStyle: NSObject & ImageViewStyleDescriptor { FavoriteImageViewStyle() }
 }
