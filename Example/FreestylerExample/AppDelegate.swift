@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  FreestylerExample
 //
-//  Created by Dávid Szép on 2020. 08. 31..
+//  Created by Dávid Széles-Szép on 2020. 08. 31..
 //  Copyright © 2020. W.UP. All rights reserved.
 //
 
+import Freestyler
 import UIKit
 
 @UIApplicationMain
@@ -14,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupThemes()
         return true
     }
 
@@ -35,3 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+private extension AppDelegate {
+    
+    func setupThemes() {
+        Freestyler.shared.registerThemes(SunriseTheme(), SunsetTheme())
+        Freestyler.shared.logLevel = .warning
+    }
+}
