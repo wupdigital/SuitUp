@@ -5,7 +5,7 @@
 ## Introduction
 Easy to use and lightweight theme manager for iOS applications written in Swift with UIKit, but taking advantages of Objective-C reflection capabilities.
 
-Repository also contains an Example app, which helps you to define themes and styles on protocol oriented way.
+Repository also contains an Example app, which helps you to define themes and styles in a protocol oriented way.
 
 ![example](Example/freestyler.gif)
 
@@ -28,7 +28,7 @@ import Freestyler
 ```
 
 ## Themes
-A theme contains color, font and image definitions based on the design, but you can extend with anything what you need.
+A theme contains color, font and image definitions based on the design, but you can extend it with anything you need.
 In **Freestyler** you can change between these themes, like the usual light and dark modes.
 
 ### Colors, fonts and images
@@ -57,10 +57,10 @@ and you can set the log level to warning or info based on your preferences. My s
 You can change currently used theme in runtime with `changeTheme(to:)` function in **Freestyler**.
 
 ## Style
-Each style contain stylable properties mirrored from the UI component, that you want to style. Even so styles live completely independent from UI components, so you never have to extend your UI components with any **Freestyler** related code snippets.
+Each style contains stylable properties mirrored from the UI component, that you want to style. However styles live completely independent from UI components, so you never have to extend your UI components with any **Freestyler** related code snippets.
 You can define these properties in a descriptor, which you can read about in the next section.
-So if `UIView` has a `backgroundColor` property and you want to style it through **Freestyler**, you have to add this property to the style. It works with any property, but only if the property is accessible from Objective-C code. You can achieve this if you use `@objc` annotation before property. (or `@objcMembers` on the class)
-Each style have to subclass of NSObject.
+So if `UIView` has a `backgroundColor` property and you want to style it through **Freestyler**, you have to add this property to the style. It works with any property, but only if the property is accessible from Objective-C code. You can achieve this if you use `@objc` annotation before the property. (or `@objcMembers` on the class)
+Each style have to subclass NSObject.
 ### Style descriptor
 It contains stylable property definitions. Important note that you have to use the exactly same name in descriptors, what you use in the UI component. So if you have a `backgroundColor` property in `UIView`, you have to define by the same name in the descriptor and you have to use `@objc` annotation before protocol, like the following:
 ```swift
