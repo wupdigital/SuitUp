@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FreestylerExample
 //
-//  Created by Dávid Szép on 2020. 08. 31..
+//  Created by Dávid Széles-Szép on 2020. 08. 31..
 //  Copyright © 2020. W.UP. All rights reserved.
 //
 
@@ -47,7 +47,7 @@ final class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) {
             self.refreshStyles()
         }
-    }   
+    }
 }
 
 // MARK: - Private

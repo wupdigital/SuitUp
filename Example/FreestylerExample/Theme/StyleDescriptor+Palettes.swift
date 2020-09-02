@@ -2,7 +2,7 @@
 //  StyleDescriptor+Palettes.swift
 //  FreestylerExample
 //
-//  Created by Dávid Szép on 2020. 09. 01..
+//  Created by Dávid Széles-Szép on 2020. 09. 01..
 //  Copyright © 2020. W.UP. All rights reserved.
 //
 
