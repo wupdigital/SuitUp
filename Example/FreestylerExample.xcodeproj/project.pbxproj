@@ -129,17 +129,15 @@
 		D7DD4D8F24FD35F300F1D398 /* FreestylerExample */ = {
 			isa = PBXGroup;
 			children = (
+				D7DD4E0624FF862800F1D398 /* Scene */,
+				D7DD4E0524FF861000F1D398 /* View */,
 				D7DD4DDF24FE318C00F1D398 /* Style */,
 				D7DD4DB924FE052400F1D398 /* Theme */,
 				D7DD4D9024FD35F300F1D398 /* AppDelegate.swift */,
 				D7DD4D9224FD35F300F1D398 /* SceneDelegate.swift */,
-				D7DD4D9424FD35F300F1D398 /* ViewController.swift */,
-				D7DD4D9624FD35F300F1D398 /* Main.storyboard */,
 				D7DD4D9924FD35F500F1D398 /* Assets.xcassets */,
 				D7DD4D9B24FD35F500F1D398 /* LaunchScreen.storyboard */,
 				D7DD4D9E24FD35F500F1D398 /* Info.plist */,
-				D7DD4DEE24FE439200F1D398 /* Button+Stylable.swift */,
-				D7DD4DF224FE46C600F1D398 /* TertiaryView.swift */,
 			);
 			path = FreestylerExample;
 			sourceTree = "<group>";
@@ -253,6 +251,24 @@
 				D7DD4DFF24FE541800F1D398 /* LabelStyleDescriptor.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		D7DD4E0524FF861000F1D398 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4DEE24FE439200F1D398 /* Button+Stylable.swift */,
+				D7DD4DF224FE46C600F1D398 /* TertiaryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7DD4E0624FF862800F1D398 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD4D9424FD35F300F1D398 /* ViewController.swift */,
+				D7DD4D9624FD35F300F1D398 /* Main.storyboard */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
